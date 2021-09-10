@@ -39,7 +39,7 @@ I will use javascript to make the elements more interactive. There will be more 
   
 ## Feedbacks (if any):
 
-If you have any feedback, please reach out to me at krchandan0626@gmail.com
+If you have any feedback, please reach out to me at ankit-joshi@hotmail.com
 
   
 ## 🔗 Contact Me:
