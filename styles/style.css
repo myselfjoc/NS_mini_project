@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s linear;
+  font-family: "Lato", sans-serif;
+  list-style: none;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/*===============================  Intro Background =============================== */
+#myVideo {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+/*===============================  Endof Intro Background =============================== */
+
+/*===============================  Navigation Bar =============================== */
+#mySidenav a {
+  position: fixed;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #04aa6d;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196f3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555;
+}
+
+/*===============================  End of Navigation Bar =============================== */
+
+/*===============================  Contact section =============================== */
+.contact {
+  position: fixed;
+  top: 20px;
+  right: 90px;
+  font-size: 1.3rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: #f8485e;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+}
+
+.contact:hover {
+  background-color: #df711b;
+  padding: 0.9rem;
+}
+
+/*===============================  End of Contact section =============================== */
+
+/*===============================  who Page =============================== */
+
+.who {
+  background-color: #161616;
+  height: 102vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 5vw;
+}
+
+.who-img {
+  height: 60vh;
+}
+
+.who-author-name {
+  font-size: 2rem;
+  color: #f38ba0;
+}
+
+.who-title {
+  font-size: 4rem;
+}
+
+.who-para {
+  font-size: 1.1rem;
+  padding-right: 7rem;
+  margin: 2rem 0;
+}
+
+.who-btn {
+  font-size: 1.7rem;
+  background: none;
+  color: #f38ba0;
+  border: 2px solid #f38ba0;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.who-btn:hover {
+  background-color: #f38ba0;
+  color: #fff;
+}
+
+/*===============================  End of who Page =============================== */
+
+/*===============================  ContactPage =============================== */
+.contact-page {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-page-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 50vh;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+
+  cursor: pointer;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.contact-mail > a {
+  font-size: 3rem;
+  color: #bf1363;
+  font-weight: 600;
+}
+
+.contact-mail > a:hover {
+  color: #005f99;
+}
+
+.contact-social {
+  margin-top: 2rem;
+}
+
+.contact-social-link {
+  color: #334257;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.contact-social-link:hover {
+  color: #c84b31;
+}
+/*===============================  End of Contact =============================== */
+
+/*===============================  What Page =============================== */
+.what {
+  background-color: #11324d;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 7vw;
+}
+
+.what-left {
+  padding-left: 8rem;
+}
+
+.what-title {
+  font-size: 5rem;
+  color: #ffb830;
+  margin-bottom: 2rem;
+}
+.what-title > span {
+  color: #64c9cf;
+}
+
+.what-list {
+  font-size: 1.7rem;
+  line-height: 2;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.what-items {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.what-items-img {
+  height: 50px;
+  margin-right: 2rem;
+}
+
+.what-img {
+  object-fit: cover;
+  height: 35rem;
+}
+
+/*===============================  End of What Page =============================== */
+
+/*===============================  Work Page =============================== */
+
+.work {
+  height: 100vh;
+  background-color: #161616;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.work-left {
+  font-size: 2rem;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-title {
+  margin-bottom: 3rem;
+  color: #ecdbba;
+}
+
+.work-span {
+  color: #c84b31 !important;
+}
+
+.work-title-img {
+  height: 30rem;
+}
+
+.work-right {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: initial;
+  overflow: auto;
+  background-color: #ecdbba;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.sample {
+  margin: auto;
+  display: grid;
+  margin-bottom: 2rem;
+}
+
+.work-sample {
+  height: 150px;
+  width: 200px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.work-sample:hover {
+  opacity: 0.8;
+}
+
+.work-sample-text {
+  margin-top: 1rem;
+  color: #c84b31;
+  font-size: 1.1rem;
+}
+/*===============================  End of Work Page =============================== */
+
+/*===============================  footer =============================== */
+
+footer {
+  background-color: #161616;
+  border-top: 2px solid #c84b31;
+  color: #fff;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.footer-social {
+  margin-top: 1rem;
+}
+
+.footer-social-link {
+  color: #fff;
+  margin-left: 1rem;
+}
+
+/*=============================== End of footer =============================== */
+
+/* ######################################################################################################################### */
+
+/* ------------------------- Making Responsive -------------------------  */
+
+@media only screen and (max-width: 1231px) {
+  /*------------ who page responsive ------------*/
+  .who-img {
+    height: 55vh;
+  }
+
+  .who-author-name {
+    font-size: 1.5rem;
+  }
+
+  .who-title {
+    font-size: 3rem;
+  }
+
+  .who-para {
+    font-size: 1rem;
+    padding-right: 5rem;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+  }
+  /*------------ end of who page responsive ------------*/
+
+  /*------------  our work page responsive ------------*/
+  .work-title-img {
+    height: 55vh;
+  }
+  /*------------  end of our work responsive ------------*/
+}
+
+@media only screen and (max-width: 1187px) {
+  /*------------ who page responsive ------------*/
+  .who-img {
+    height: 55vh;
+  }
+
+  .who-author-name {
+    font-size: 1.5rem;
+  }
+
+  .who-title {
+    font-size: 3rem;
+  }
+
+  .who-para {
+    font-size: 1rem;
+    padding-right: 5rem;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+  }
+  /*------------ end of who page responsive ------------*/
+
+  /*------------  our work page responsive ------------*/
+  .work-title-img {
+    height: 55vh;
+  }
+  /*------------  end of our work responsive ------------*/
+
+  /*------------ what page responsive ------------*/
+  .what-title {
+    font-size: 4rem;
+  }
+
+  .what-list {
+    font-size: 1.4rem;
+  }
+
+  .what-img {
+    height: 28rem;
+  }
+  /*------------  end of  what page responsive ------------*/
+}
+
+@media only screen and (max-width: 1173px) {
+  /*------------ who page responsive ------------*/
+  .who-img {
+    height: 43vh;
+  }
+
+  .who-author-name {
+    font-size: 1.2rem;
+  }
+
+  .who-title {
+    font-size: 2.3rem;
+  }
+
+  .who-para {
+    font-size: 0.9rem;
+    padding-right: 3rem;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+  }
+  /*------------ end of who page responsive ------------*/
+
+  /*------------  our work page responsive ------------*/
+  .work-title-img {
+    height: 48vh;
+  }
+  /*------------  end of our work responsive ------------*/
+
+  /*------------ what page responsive ------------*/
+  .what {
+    padding: 0 6vw;
+  }
+
+  .what-title {
+    font-size: 3rem;
+  }
+
+  .what-list {
+    font-size: 1.2rem;
+  }
+
+  .what-items-img {
+    height: 35px;
+    margin-right: 2rem;
+  }
+
+  .what-img {
+    height: 25rem;
+  }
+  /*------------  end of  what page responsive ------------*/
+}
+
+@media only screen and (max-width: 987px) {
+  /*------------ who page responsive ------------*/
+  who {
+    padding: 0 4vw;
+  }
+
+  .who-img {
+    height: 40vh;
+  }
+
+  .who-author-name {
+    font-size: 1.3rem;
+  }
+
+  .who-title {
+    font-size: 3rem;
+  }
+
+  .who-para {
+    font-size: 1rem;
+    padding-right: 5rem;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+  }
+  /*------------ end of who page responsive ------------*/
+
+  /*------------  our work page responsive ------------*/
+  .work-title-img {
+    height: 48vh;
+  }
+  /*------------  end of our work responsive ------------*/
+
+  /*------------ what page responsive ------------*/
+  .what-title {
+    font-size: 4rem;
+  }
+
+  .what-list {
+    font-size: 1.4rem;
+  }
+
+  .what-img {
+    height: 28rem;
+  }
+  /*------------  end of  what page responsive ------------*/
+}
+@media only screen and (max-width: 768px) {
+  /*------------ who page responsive ------------*/
+
+  .who {
+    background-color: #161616;
+    height: 102vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5vw;
+  }
+
+  .who-img {
+    margin-top: -9rem;
+    margin-bottom: -16rem;
+    height: 40vh;
+  }
+
+  .who-author-name {
+    font-size: 1.3rem;
+  }
+
+  .who-title {
+    font-size: 3rem;
+  }
+
+  .who-para {
+    font-size: 1rem;
+    padding-right: 5rem;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+  }
+  /*------------ end of who page responsive ------------*/
+
+  /*------------ what page responsive ------------*/
+  .what {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .what-left {
+    padding: 0rem;
+    margin-top: 2rem;
+  }
+
+  .what-title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .what-list {
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+  }
+
+  .what-img {
+    height: 28rem;
+  }
+  /*------------  end of  what page responsive ------------*/
+
+  /*------------  our work page responsive ------------*/
+  .work {
+    display: flex;
+    flex-direction: column;
+  }
+  .work-left {
+    margin-top: 2rem;
+  }
+
+  .work-title-img {
+    height: 40vh;
+    margin-bottom: 2rem;
+  }
+  /*------------  end of our work responsive ------------*/
+}
