@@ -19,7 +19,7 @@ This is my first mini project which consists of about myself, my technical knowl
 - **HTML 5**
 
 - **CSS 3**
-- 
+
 - **JavaScript**
 
   
@@ -57,4 +57,4 @@ If you have any feedback, please reach out to me at krchandan0626@gmail.com
  - [Mentor - Ankeet Kumar Hanny](https://www.linkedin.com/in/ankeethanny007/) 
  - [W3School](https://www.w3schools.com/)
  - [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS)
- -
+ 
